@@ -1,0 +1,11 @@
+<xf:title>{{ phrase('composertutorial_test') }}</xf:title>
+
+<xf:if is="$output">
+	<div class="block-container">
+		<ul>
+			<xf:foreach loop="$output" value="$text">
+				<li>{{ $text }}</li>
+			</xf:foreach>
+		</ul>
+	</div>
+</xf:if>

@@ -1,0 +1,14 @@
+{
+    "admin_navigation.testComposerTutorial.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "1.0.0",
+        "hash": "0b4acd679966946074e7d7f45b059a18"
+    },
+    "composertutorial_test.txt": {
+        "global_cache": false,
+        "version_id": 1,
+        "version_string": "1.0.0",
+        "hash": "7fe7b8e513b0f74a2a0b4ce026867b7e"
+    }
+}
