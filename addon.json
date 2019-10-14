@@ -13,5 +13,6 @@
         "Twitter": "https://twitter.com/SimonHampel"
     },
     "require": [],
-    "icon": "composer.png"
+    "icon": "composer.png",
+    "composer_autoload": "vendor/composer"
 }
