@@ -1,7 +1,7 @@
 {
     "legacy_addon_id": "",
     "title": "Composer Tutorial",
-    "description": "Shows how to include Composer packages in XenForo 2.1 addons",
+    "description": "Shows how to include Composer packages in XenForo 2.x addons",
     "version_id": 2010070,
     "version_string": "2.1.0",
     "dev": "Simon Hampel",
@@ -12,7 +12,12 @@
         "Git Repository": "https://bitbucket.org/hampel/xenforo-composer-tutorial",
         "Twitter": "https://twitter.com/SimonHampel"
     },
-    "require": [],
+    "require": {
+        "php": [
+            "7.1.8",
+            "PHP 7.1.8+"
+        ]
+    },
     "icon": "composer.png",
     "composer_autoload": "vendor/composer"
 }
