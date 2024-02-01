@@ -5,12 +5,11 @@
     "version_id": 2010070,
     "version_string": "2.1.0",
     "dev": "Simon Hampel",
-    "dev_url": "https://bitbucket.org/hampel/",
-    "faq_url": "",
-    "support_url": "https://bitbucket.org/hampel/xenforo-composer-tutorial/issues",
+    "dev_url": "https://github.com/hampel",
+    "faq_url": "https://xenforo.com/community/resources/using-composer-packages-in-xenforo-2-1-addons-tutorial.7432/field?field=faq",
+    "support_url": "https://xenforo.com/community/threads/using-composer-packages-in-xenforo-2-1-addons-tutorial.171049/",
     "extra_urls": {
-        "Git Repository": "https://bitbucket.org/hampel/xenforo-composer-tutorial",
-        "Twitter": "https://twitter.com/SimonHampel"
+        "Git Repository": "https://github.com/hampel/xenforo-composer-tutorial/"
     },
     "require": {
         "php": [
