@@ -1,0 +1,17 @@
+# Line endings are normalised to LF in the repository and on checkout.
+#
+# Commits are made from SourceTree on Windows over \\wsl$; without this, CRLF
+# leaks into the working tree and every tracked file shows as modified with an
+# empty diff, which hides real changes rather than merely being untidy.
+* text=auto eol=lf
+
+# Binary assets — never touched, never diffed as text.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.zip  binary
+*.ttf  binary
+*.woff  binary
+*.woff2 binary
