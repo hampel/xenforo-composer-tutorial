@@ -66,11 +66,15 @@ The ID is `ComposerTutorial` — not `Vendor/ComposerTutorial` — so the path i
 php cmd.php xf-dev:import --addon=ComposerTutorial    # after hand-editing _output/
 php cmd.php xf:addon-install ComposerTutorial
 php cmd.php xf-addon:bump-version ComposerTutorial    # ask first
-php cmd.php xf-addon:build-release ComposerTutorial   # release only — runs xf-dev:export
+php cmd.php xf-addon:build-release ComposerTutorial   # release only
 ```
 
 `vendor/` is gitignored, and both `checkRequirements()` and the class extension need it, so
 after a fresh clone run `composer install` in the add-on directory.
+
+`build-release` begins with `xf-addon:export <id>`, which is add-on-scoped and safe. Do not
+confuse it with `xf-dev:export`, whose `--addon` option is optional and which exports **every**
+add-on over the filesystem when omitted. Nothing here should ever run that.
 
 ## Verification is manual — there is no test suite
 
