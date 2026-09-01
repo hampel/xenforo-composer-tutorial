@@ -6,8 +6,8 @@
     "version_string": "2.1.2",
     "dev": "Simon Hampel",
     "dev_url": "https://github.com/hampel",
-    "faq_url": "https://xenforo.com/community/resources/using-composer-packages-in-xenforo-2-1-addons-tutorial.7432/field?field=faq",
-    "support_url": "https://xenforo.com/community/threads/using-composer-packages-in-xenforo-2-1-addons-tutorial.171049/",
+    "faq_url": "https://xenforo.com/community/resources/using-composer-packages-in-xenforo-2-x-addons-tutorial.7432/field?field=faq",
+    "support_url": "https://xenforo.com/community/threads/using-composer-packages-in-xenforo-2-x-addons-tutorial.171049/",
     "extra_urls": {
         "Git Repository": "https://github.com/hampel/xenforo-composer-tutorial/"
     },

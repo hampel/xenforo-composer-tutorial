@@ -18,11 +18,13 @@ Machine-specific details — the checkout path, the dev vhost name, the audit re
 ## What this add-on is for
 
 It is a **teaching artifact**, not a feature. Its entire job is to demonstrate the mechanism
-for shipping Composer packages inside a XenForo 2 add-on, and it backs a published tutorial
-([resource 6588](https://xenforo.com/community/resources/using-composer-packages-in-xenforo-2-addons-tutorial.6588/)
-for XF 2.0, rewritten as
-[resource 7432](https://xenforo.com/community/resources/using-composer-packages-in-xenforo-2-1-addons-tutorial.7432/)
-once XF 2.1 gained built-in Composer support).
+for shipping Composer packages inside a XenForo 2 add-on, and it backs the published tutorial
+[Using Composer Packages in XenForo 2.x Addons](https://xenforo.com/community/resources/using-composer-packages-in-xenforo-2-x-addons-tutorial.7432/)
+(resource 7432).
+
+That tutorial is a rewrite. The original — resource 6588 — was written for XF 2.0, before
+XenForo had Composer support of its own; XenForo's implementation in 2.1 was based on it. The
+rewrite covers the built-in mechanism instead, which is why this add-on requires XF 2.1+.
 
 The Carbon date formatting in `XF/Admin/Controller/Tools.php` is filler — it exists only to
 prove a third-party package autoloads. Keep changes minimal and legible; a clever refactor
