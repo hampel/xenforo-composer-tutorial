@@ -31,10 +31,12 @@ belongs here rather than in the chat log.
 
 ## Fragile points
 
-* **The class extension is shared.** `Hampel/SparkPostMail` also extends
-  `XF\Admin\Controller\Tools`. `XF::extendClass()` resolves to whichever sits last in the
-  chain, and this add-on's action is reached through inheritance. Correct XFCP behaviour, but
-  it means a change to either add-on's extension can break this one.
+* **The class extension is not exclusive.** `XF\Admin\Controller\Tools` is a popular thing
+  to extend, so on a real forum this add-on is usually one link in a chain of several.
+  `XF::extendClass()` resolves to whichever extension sits last, and this add-on's action is
+  then reached through inheritance — correct XFCP behaviour, but it means the action can be
+  affected by an unrelated add-on extending the same controller. Worth testing on an install
+  that has other add-ons present, not only a clean one.
 * **The build cannot fail.** `build.json` exec steps run through `passthru()` with the exit
   status discarded, so a `composer install` that fails still produces a zip — with no
   `vendor/`. `Setup.php::checkRequirements()` is the only thing that catches it, on the user's
@@ -75,9 +77,9 @@ Run from the install root unless stated. None of this needs a browser or a login
   are plausible for your timezone.
 * **Confirm the navigation entry appears** under Tools → Checks and Tests in the admin sidebar,
   with the phrase "Test Composer Tutorial" rather than a raw phrase key.
-* **Test the upgrade path.** Install the built zip over an existing 2.1.1 on the other install
-  (`xenforo22.local`) as a user would, rather than only installing fresh. A `Setup.php` step
-  that works on a fresh install and fails on upgrade is the classic failure and nothing above
-  would catch it.
+* **Test the upgrade path.** Install the built zip over the previous version, on a separate
+  install, as a user would — rather than only installing fresh. A `Setup.php` step that works
+  on a fresh install and fails on upgrade is the classic failure, and nothing above would
+  catch it.
 * **Check the tutorial still matches the code.** This add-on backs a published article; if the
   mechanism changed, the article is wrong until someone edits it.
